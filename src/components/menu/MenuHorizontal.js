@@ -1,24 +1,27 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Link } from "react-router-dom";
+import { withRouter  } from "react-router-dom";
+import { Menu , MenuItem } from '@progress/kendo-react-layout';
 
-const MenuHorizontal = ({ pageList }) => {
-  console.log(pageList);
+class MenuHorizontal extends React.Component {
 
-  const list = pageList.map(page => {
+  list = this.props.pageList.map(page => {
     return (
-      <li key={page.id}>
-        <Link to={page.action}>{page.name}</Link>
-      </li>
+        <MenuItem key={page.id} text={page.name} data={{ route: page.action }} />
       );
   });
 
+  onSelect = (event) => {
+    this.props.history.push(event.item.data.route);
+  } 
 
-  return (
-    <ul>
-      {list}
-    </ul>
-  );
+  render(){
+    return (
+      <Menu onSelect={this.onSelect}>
+        {this.list}
+      </Menu>
+    );
+  }
 }
 
 const mapStateToProps = state => {
@@ -26,4 +29,4 @@ const mapStateToProps = state => {
 };
 export default connect(
   mapStateToProps
-)(MenuHorizontal);
+)(withRouter(MenuHorizontal));

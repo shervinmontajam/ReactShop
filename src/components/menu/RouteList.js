@@ -10,7 +10,9 @@ const RouteList = ({ pageList }) => {
 
 
   const routes = pageList.map(page => {
-    return <Route key={page.id} path={page.action} exact component={moduleList.find(item=> item.moduleName === page.moduleName).module} />;
+    if(page.moduleName !== "" && page.type !== "no-action") {
+      return <Route key={page.id} path={page.action} exact component={moduleList.find(item=> item.moduleName === page.moduleName).module} />;
+    }
   });
 
   return (
