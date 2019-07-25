@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
 import 'semantic-ui-css/semantic.min.css'
+import '@progress/kendo-theme-bootstrap/dist/all.css';
 import "./sass/site-default.scss"
 
 

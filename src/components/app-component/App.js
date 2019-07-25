@@ -1,22 +1,21 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import '@progress/kendo-theme-bootstrap/dist/all.css';
 
 import Header from "../shared/layout-components/header/Header";
 import Footer from "../shared/layout-components/footer/Footer";
-import MenuHorizontal from "../menu/MenuHorizontal";
-import RouteList from "../menu/RouteList";
+import MenuHorizontal from "../shared/menu/MenuHorizontal";
+import RouteList from "../shared/menu/RouteList";
 
 const App = () => {
   return (
-    <div className="ui container">
+    <div className="container">
       <BrowserRouter>
-        <div>
-          <Header />
-          <MenuHorizontal />
+        <Header />
+        <MenuHorizontal />
+        <div class="main-content">
           <RouteList />
-          <Footer />
         </div>
+        <Footer />
       </BrowserRouter>
     </div>
   );

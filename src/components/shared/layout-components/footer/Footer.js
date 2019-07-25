@@ -1,7 +1,13 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
-    return <div><h3>Footer Area</h3></div>;
-}
+  return (
+    <footer class="footer">
+      <div class="footer__copy-rights">
+        &copy; Shop Footer Section
+      </div>
+    </footer>
+  );
+};
 
 export default Footer;

@@ -1,9 +1,9 @@
-import About from "../about/About";
-import Contact from "../contact/Contact";
-import Home from "../home/Home";
-import NewsList from "../news/NewsList";
-import ProductsList from "../products/ProductsList";
-import DynamicPage from "../dynamic-page/DynamicPage";
+import About from "../../about/About";
+import Contact from "../../contact/Contact";
+import Home from "../../home/Home";
+import NewsList from "../../news/NewsList";
+import ProductsList from "../../products/ProductsList";
+import DynamicPage from "../../dynamic-page/DynamicPage";
 
 export const moduleList = [
   { moduleName: "Home", module: Home },

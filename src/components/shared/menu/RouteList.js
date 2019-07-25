@@ -4,7 +4,7 @@ import { Route, Switch } from "react-router-dom";
 import _ from 'lodash';
 
 import {moduleList} from './ModuleList';
-import Notfound from "../shared/errors/not-found/NotFound";
+import Notfound from "../errors/not-found/NotFound";
 
 
 const RouteList = ({ pageList }) => {
