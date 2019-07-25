@@ -1,0 +1,86 @@
+%heading {
+	font-family: $font-display;
+	font-weight: 400;
+}
+
+.heading-1 {
+	@extend %heading;
+	font-size: 4.5rem;
+	line-height: 1;
+
+	&--light {
+		color: $color-typo-light;
+	}
+
+	&--dark {
+		color: $color-typo-dark;
+	}
+}
+
+.heading-2 {
+	@extend %heading;
+	font-size: 4rem;
+	font-style: italic;
+	line-height: 1;
+
+	&--light {
+		color: $color-typo-light;
+	}
+
+	&--dark {
+		color: $color-typo-dark;
+	}
+}
+
+.heading-3 {
+	@extend %heading;
+	font-size: 2.5rem;
+
+	&--light {
+		color: $color-typo-light;
+	}
+
+	&--dark {
+		color: $color-typo-dark;
+	}
+}
+
+.heading-4 {
+	@extend %heading;
+	font-size: 1.6rem;
+
+	&--light {
+		color: $color-typo-light;
+	}
+
+	&--dark {
+		color: $color-typo-dark;
+	}
+}
+
+.page-title {
+	@extend %heading;
+	font-size: 2.5rem;
+
+	display: grid;
+	grid-template-columns: 4% max-content 1fr;
+	grid-column-gap: 1rem;
+	align-items: center;
+
+
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		height: .2rem;
+		background-color: currentColor;
+	}
+
+	&--light {
+		color: $color-typo-light;
+	}
+
+	&--dark {
+		color: $color-typo-dark;
+	}
+}

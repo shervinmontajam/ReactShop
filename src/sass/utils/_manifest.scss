@@ -1,0 +1,52 @@
+﻿// global import file
+
+//vendors
+//@import "../vendors/bootstrap/bootstrap.scss";
+
+// abstracts
+@import "../abstracts/functions";
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+// base
+@import "../base/animations";
+@import "../base/base";
+@import "../base/typography";
+
+// utils
+@import "../utils/utilities";
+
+// layouts
+@import "../layout/grid";
+@import "../layout/footer";
+@import "../layout/header";
+@import "../layout/navigation";
+@import "../layout/main";
+@import "../layout/_component-panel";
+
+// components
+@import "../components/input";
+@import "../components/form";
+@import "../components/button";
+@import "../components/loader";
+@import "../components/alert";
+@import "../components/validation";
+@import "../components/_user-status";
+@import "../components/_hyperlink";
+@import "../components/_language";
+@import "../components/_navbar";
+@import "../components/_navigation-drawer";
+@import "../components/_grid-view";
+@import "../components/_action-bar";
+@import "../components/_listbox";
+@import "../components/_tooltip";
+@import "../components/_table-list";
+@import "../components/_module-name";
+
+//pages
+@import "../pages/login";
+@import "../pages/home";
+@import "../pages/_listview-column1";
+@import "../pages/_listview-column2";
+@import "../pages/_form-column1";
+@import "../pages/_form-column2";

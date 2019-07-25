@@ -1,0 +1,8 @@
+﻿// Set a variable containing current Theme
+$theme: 'dark';
+
+// import theme
+@import 'themes/dark-theme';
+
+// reading the imports
+@import 'utils/manifest';

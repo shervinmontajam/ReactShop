@@ -1,0 +1,9 @@
+.container {
+	display: grid;
+	grid-template-rows: 6rem 6rem 1fr 5rem;
+	grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 21rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+
+	@include respond(tab-port) {
+		grid-template-rows: 6rem 1fr 5rem;
+	}
+}

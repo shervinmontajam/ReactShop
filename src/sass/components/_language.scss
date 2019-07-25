@@ -1,0 +1,13 @@
+﻿.language {
+	
+	display:grid;
+	grid-template-columns: max-content max-content max-content;
+	grid-column-gap: .7rem;
+
+	& a:link,
+	& a:visited,
+	& a:active,
+	& a:hover {
+		text-decoration: none;
+	}
+}

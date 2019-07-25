@@ -1,0 +1,8 @@
+.main-content {
+	grid-row: 3 / 4;
+	grid-column: center-start / center-end;
+
+	@include respond(tab-port) {
+		grid-row: 2 / 3;
+	}
+}

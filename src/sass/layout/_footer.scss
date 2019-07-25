@@ -1,0 +1,18 @@
+.footer {
+	height: 100%;
+	font-size: 1.5rem;
+	grid-row: 4 / 5;
+	grid-column: full-start / full-end;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@include respond(tab-port) {
+		grid-row: 3 / 4;
+	}
+
+	&__copy-rights {
+		font-family: $font-display;
+		font-weight: 400;
+	}
+}

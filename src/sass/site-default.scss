@@ -1,0 +1,8 @@
+﻿// Set a variable containing current Theme
+$theme: 'default';
+
+// import theme
+@import 'themes/default-theme';
+
+// reading the imports
+@import 'utils/manifest';

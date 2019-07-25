@@ -1,0 +1,6 @@
+.listview-column1 {
+	padding: $gutter-vertical-small 0;
+	display: grid;
+	grid-template-rows: max-content max-content max-content;
+	grid-row-gap: $gutter-vertical-small;
+}

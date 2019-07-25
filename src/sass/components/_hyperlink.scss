@@ -1,0 +1,16 @@
+﻿.hyperlink {
+
+	&:link,
+	&:visited {
+		color: $color-typo-dark;
+		font-size: 1.4rem;
+		text-decoration: none;
+		transition:all .2s;
+	}
+
+	&:hover,
+	&:active {
+		color:$color-typo-normal;
+		text-decoration:underline;
+	}
+}

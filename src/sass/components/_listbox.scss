@@ -1,0 +1,26 @@
+﻿.listbox {
+	font-family: $font-display;
+	font-size: 1.6rem;
+
+	&__top-text {
+		display: flex;
+		justify-content: space-between;
+		padding: 1rem 0;
+	}
+
+	&__left-box {
+		width: 53%;
+		height: 40rem;
+	}
+
+	&__right-box {
+		width: 46%;
+		height: 40rem;
+	}
+
+	&__bottom-text {
+		display: flex;
+		justify-content: center;
+		padding: 1rem 0;
+	}
+}

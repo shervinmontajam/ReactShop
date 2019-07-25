@@ -1,0 +1,35 @@
+﻿.grid-view {
+	font-size: 1.6rem;
+
+	&__action-link {
+		position: relative;
+		display: flex;
+		justify-content: center;
+
+		& > a:link,
+		& > a:visited {
+			color: $color-typo-dark;
+			font-size: 1.8rem;
+			text-decoration: none;
+			transition: all .2s;
+		}
+
+		& > a:hover,
+		& > a:active {
+			transform: translateY(-.3rem);
+		}
+
+		& > *:not(:last-child) {
+			padding-right: $gutter-horizontal-small;
+		}
+	}
+
+	&__text-center {
+		text-align: center;
+	}
+
+	& .k-header {
+		font-family: $font-display;
+		font-weight: 400;
+	}
+}

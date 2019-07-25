@@ -1,0 +1,13 @@
+.form-column2 {
+	display: grid;
+	grid-template-rows: max-content 1fr;
+
+	&__pnl-form {
+		width: 90rem;
+		justify-self: center;
+
+		@include respond(tab-port) {
+			width: 95%;
+		}
+	}
+}

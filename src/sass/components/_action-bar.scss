@@ -1,0 +1,10 @@
+﻿.action-bar {
+	min-height: 6rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
+	& > * {
+		margin-left: $gutter-horizontal-small;
+	}
+}

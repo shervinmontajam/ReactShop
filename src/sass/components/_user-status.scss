@@ -1,0 +1,14 @@
+﻿.user-status {
+	
+	display:grid;
+	grid-template-columns: max-content max-content max-content;
+	grid-column-gap: 1rem;
+	align-items:center;
+
+	&__avatar{
+		width:5rem;
+		height:5rem;
+		border-radius:50%;
+	}
+
+}

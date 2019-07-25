@@ -1,0 +1,36 @@
+﻿.tooltip {
+	display: inline;
+	position: relative;
+
+	&:hover:after {
+		content: attr(title);
+		position: absolute;
+		left: 20%;
+		bottom: 4rem;
+		background: #333;
+		background: rgba(0,0,0,.8);
+		border-radius: 5px;
+		color: #fff;
+		padding: 5px 15px;
+		z-index: 100000;
+		width: 100px;
+	}
+
+	&:hover:before {
+		content: "";
+		position: absolute;
+		bottom: 3.4rem;
+		left: 50%;
+		border: solid;
+		border-color: #333 transparent;
+		border-width: 6px 6px 0 6px;
+		z-index: 1000;
+	}
+}
+
+.k-tooltip {
+	font-size: 1.6rem;
+	min-width: 20rem;
+	font-family: $font-display;
+	font-weight: 400;
+}

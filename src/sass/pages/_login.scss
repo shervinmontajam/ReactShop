@@ -1,0 +1,55 @@
+.login-container {
+	//min-height: calc(100vh - 5rem);
+	min-height: 100vh;
+	//background-image: linear-gradient(to bottom right,rgba(0, 0, 0, .5), rgba(99,99,99, .93)), url(../images/login-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	display: grid;
+	grid-template-columns: 100%;
+	justify-content: center;
+	align-content: center;
+
+
+
+
+
+	&__section-login {
+		display: grid;
+		grid-template-columns: 60rem;
+		grid-row-gap: 1.5rem;
+		justify-content: center;
+
+		@include respond(phone) {
+			grid-template-columns: 90%;
+		}
+	}
+}
+
+.login-card {
+	box-shadow: $shadow-dark;
+	background-color: rgba($color-white, .4);
+	border-radius: $border-radius-medium;
+	padding: 2rem;
+
+	display:grid;
+	grid-template-columns:1fr;
+	grid-row-gap:1rem;
+
+	&__card-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__avatar {
+		display: inline-block;
+		width: 5rem;
+		height: 5rem;
+		border-radius: 50%;
+
+		@include respond(tab-land) {
+			width: 5rem;
+			height: 5rem;
+		}
+	}
+}
