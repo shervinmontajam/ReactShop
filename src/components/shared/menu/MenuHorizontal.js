@@ -7,8 +7,10 @@ import _ from "lodash";
 class MenuHorizontal extends React.Component {
   listRender = [];
 
+
   componentDidMount() {
     this.loadMenus();
+    this.setState({temp : 2});
     console.log(this.listRender);
   }
 
@@ -44,16 +46,16 @@ class MenuHorizontal extends React.Component {
 
   render() {
     return (
-      <div class="navigation">
-        <div class="navigation__navbar">
+      <div className="navigation">
+        <div className="navigation__navbar">
           <Menu items={this.listRender} onSelect={this.onSelect} />
         </div>
-        <div class="navigation__drawer">
-          <h4 class="heading-3 heading-3--dark">
-            <localize word-code="@typeof(WC_UI_Web_Common.CompanyRelating.CompanyFullName)" />
+        <div className="navigation__drawer">
+          <h4 className="heading-3 heading-3--dark">
+            Web Shop
           </h4>
-          <div id="btnDrawerTriger" class="navigation__drawer-btn">
-            <i class="fas fa-bars fa-2x" />
+          <div id="btnDrawerTriger" className="navigation__drawer-btn">
+            <i className="bars big" />
           </div>
         </div>
       </div>

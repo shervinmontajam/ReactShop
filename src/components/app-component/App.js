@@ -12,7 +12,7 @@ const App = () => {
       <BrowserRouter>
         <Header />
         <MenuHorizontal />
-        <div class="main-content">
+        <div className="main-content">
           <RouteList />
         </div>
         <Footer />
