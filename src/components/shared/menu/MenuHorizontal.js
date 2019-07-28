@@ -10,8 +10,6 @@ class MenuHorizontal extends React.Component {
 
   componentDidMount() {
     this.loadMenus();
-    this.setState({temp : 2});
-    console.log(this.listRender);
   }
 
   loadMenus = () => {

@@ -1,4 +1,4 @@
-
+import { PAGE_LIST } from '../constants'
 
 const fakePageList = [
     {id : 1, parentId : null, name : "Home", title : "Welcome To Shop", vieworder : 1, active : true, action : "/", moduleName : "Home", type:"component"},
@@ -22,7 +22,7 @@ const fakePageList = [
 ]
 
 export const pageListReducer = (state = fakePageList, action) => {
-    if(action.type === 'PAGE_LIST'){
+    if(action.type === PAGE_LIST){
       return [...state, action.payload]
     } 
     return state;

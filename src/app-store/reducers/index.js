@@ -1,6 +1,8 @@
-import { combineReducers } from 'redux';
-import { pageListReducer } from './page';
+import { combineReducers } from "redux";
+import { reducer as formReducer } from "redux-form";
+import { pageListReducer } from "./page";
 
 export default combineReducers({
-    pageList: pageListReducer
-  });
+  pageList: pageListReducer,
+  form: formReducer
+});
