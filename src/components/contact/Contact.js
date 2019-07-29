@@ -1,25 +1,19 @@
 import React from "react";
-import {Field, reduxForm} from 'redux-form';
+import ContactForm from './ContactForm';
+
 
 class Contact extends React.Component {
-
-    
-
-
-
   render() {
     return (
-      <form>
+      <div>
         <h3>Contact us page</h3>
         <hr />
-        <Field name="fullname" />
-        <Field name="email" />
-        <Field name="note" />
-      </form>
+        <ContactForm />
+      </div>
     );
   }
 }
 
-export default reduxForm({
-    form : "contact"
-})(Contact);
+export default Contact;
+
+
